@@ -1,0 +1,30 @@
+@mixin font-face($name, $file, $weight: 400, $style: normal) {
+	@font-face {
+		font-family: "#{$name}";
+		src: local("#{$file}"),
+		url('../fonts/#{$file}.woff2') format('woff2'),
+		url('../fonts/#{$file}.woff') format('woff');
+		font-weight: $weight;
+		font-style: $style;
+		font-display: swap;
+	}
+}
+
+@mixin container($max-width:"120rem", $padding:"2rem") {
+	width: 100%;
+	max-width: #{$max-width};
+	padding: 0 #{$padding};
+	margin: 0 auto;
+}
+
+@mixin respond-to-max($maxWidth) {
+	@media (max-width: #{$maxWidth}px) {
+		@content
+	}
+}
+
+@mixin respond-to-min($minWidth) {
+	@media (min-width: #{$minWidth}px) {
+		@content
+	}
+}
