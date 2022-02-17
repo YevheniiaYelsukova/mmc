@@ -1,0 +1,38 @@
+.b-ticket {
+  display: flex;
+  padding: 30px;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: column;
+  background: url("../img/homepage/ticket-bg/ticket-bg.jpg") no-repeat center;
+  background-size: cover;
+
+  &__type {
+    color: #0d0d0d;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &__price {
+    color: #050505;
+    font-size: 75px;
+    font-weight: bold;
+  }
+  &__age {
+    margin-bottom: 15px;
+  }
+  &__age,
+  &__description {
+    color: #0d0d0d;
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+
+
+.w-tickets {
+  display: flex;
+
+  & > .b-ticket {
+    margin: 0 5px;
+  }
+}

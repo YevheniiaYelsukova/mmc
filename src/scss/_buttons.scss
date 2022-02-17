@@ -1,0 +1,20 @@
+.b-search__btn {
+  padding: 0;
+  width: 36px;
+  height: 36px;
+}
+.b-btn__link {
+  color: #fff;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: #b0352b;
+
+  & > .link__icon {
+    width: 11px;
+  }
+}

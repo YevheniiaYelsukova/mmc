@@ -1,0 +1,41 @@
+.b-fab {
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  width: 378px;
+  z-index: 100;
+  height: 156px;
+  display: flex;
+  position: fixed;
+  font-size: 42px;
+  font-weight: bold;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  background-image: url("../img/homepage/fab/buy-tickets-background.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &__icon {
+    width: 34px;
+    height: 34px;
+    margin-left: 10px;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:after {
+    right: 10%;
+    top: -108px;
+    content: "";
+    width: 152px;
+    height: 119px;
+    display: block;
+    user-select: none;
+    position: absolute;
+    background-image: url("../img/homepage/fab/guy.png");
+  }
+
+}

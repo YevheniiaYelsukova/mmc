@@ -1,0 +1,51 @@
+.b-hero {
+
+  &__title {
+    line-height: 1;
+    font-size: 110px;
+    margin-bottom: 7px;
+    letter-spacing: -4.4px;
+
+    &-sub {
+      font-size: 34px;
+    }
+  }
+
+  &__description {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: 'Kreon', sans-serif;
+  }
+}
+
+
+
+.w-hero {
+  color: #fff;
+  display: flex;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  background-color: #ccc;
+  justify-content: center;
+  text-transform: uppercase;
+  min-height: calc(100vh - 139px);
+  font-family: 'COCOGOOSELETTERPRESS', sans-serif;
+
+  &__inner {
+    z-index: 5;
+    padding: 0 15px;
+    position: relative;
+    text-shadow: 0 2px 4px rgba(0,0,0,.5);
+  }
+
+  .w-parallax {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    position: absolute;
+  }
+}

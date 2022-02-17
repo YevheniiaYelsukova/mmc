@@ -1,0 +1,35 @@
+.b-logo {
+  top: 0;
+  width: 204px;
+  height: 208px;
+  position: relative;
+  transition: all .2s ease;
+  background: url("../img/logos/logo.png") no-repeat center;
+  background-size: contain;
+}
+
+
+.w-nav {
+  top: 0;
+  z-index: 1000;
+  position: relative;
+  transition: top .2s ease;
+
+  &.sticky {
+    top: 30px;
+
+    & > .w-top__menu {
+      height: 34px;
+
+      .b-top__menu {
+        height: 0;
+        overflow: hidden;
+      }
+    }
+
+    .b-logo {
+      top: -20px;
+      height: 151px;
+    }
+  }
+}

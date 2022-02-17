@@ -1,0 +1,51 @@
+.b-top__menu {
+  display: flex;
+  align-items: center;
+  transition: height .2s ease;
+
+  &-item {
+    margin-left: 30px;
+
+    &.time__link {
+      margin-left: 70px;
+      margin-right: 30px;
+    }
+
+    &.phone__link {
+      margin-left: 47px;
+      margin-right: 23px;
+    }
+  }
+
+  &-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+      opacity: .8;
+    }
+
+    & > .menu__link-icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+
+.w-top__menu {
+  height: 66px;
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  margin-bottom: -3px;
+  justify-content: flex-end;
+  transition: height .2s ease;
+  background-image: url("../img/top-menu/bg.png");
+  background-repeat-y: no-repeat;
+  background-repeat-x: repeat;
+  background-position: right;
+}

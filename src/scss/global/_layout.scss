@@ -1,0 +1,24 @@
+.w-app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  & > .w-main {
+    flex: 1 1 auto;
+  }
+}
+
+
+.w-nav {
+
+  &.sticky {
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: fixed;
+
+    & + .w-main {
+      padding-top: 107px;
+    }
+  }
+}

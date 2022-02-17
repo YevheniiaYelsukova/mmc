@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Adult",
+    "price": "$17",
+    "age": "(13+ years)",
+    "description": "Quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor",
+    "extra1": "Local & Service Discounts Available.",
+    "extra2": "Prices  include tax."
+  },
+  {
+    "type": "Youth",
+    "price": "$13",
+    "age": "(8-12 years)",
+    "description": "Quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor",
+    "extra1": "Local & Service Discounts Available.",
+    "extra2": "Prices  include tax."
+  },
+  {
+    "type": "Kid",
+    "price": "$5",
+    "age": "(3-7 years)",
+    "description": "Quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor",
+    "extra1": "Prices  include tax.",
+    "extra2": ""
+  }
+]
