@@ -1,24 +1,26 @@
 .b-ticket {
   display: flex;
-  padding: 30px;
   border-radius: 5px;
   align-items: center;
   flex-direction: column;
+  padding: 65px 35px 55px;
   background: url("../img/homepage/ticket-bg/ticket-bg.jpg") no-repeat center;
   background-size: cover;
 
   &__type {
     color: #0d0d0d;
+    line-height: 1;
     font-size: 30px;
     font-weight: bold;
   }
   &__price {
     color: #050505;
+    line-height: 1;
     font-size: 75px;
     font-weight: bold;
   }
   &__age {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   &__age,
   &__description {
@@ -26,11 +28,32 @@
     font-size: 18px;
     font-weight: normal;
   }
+
+  &__description {
+    max-width: 90%;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0 auto 22px;
+  }
+
+  &__extra {
+    color: #000;
+    font-size: 18px;
+    line-height: 14px;
+    margin-bottom: 15px;
+  }
+
+  & > .b-btn__link {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 
 .w-tickets {
   display: flex;
+  margin: 0 auto;
+  max-width: 1090px;
 
   & > .b-ticket {
     margin: 0 5px;

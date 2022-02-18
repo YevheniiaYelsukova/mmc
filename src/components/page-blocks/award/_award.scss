@@ -1,0 +1,158 @@
+.b-award {
+  color: #000;
+  padding: 20px;
+  display: flex;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  align-items: center;
+  text-decoration: none;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  transition: all ease .2s;
+  box-shadow: 0 0 7px rgba(0, 0, 0, .09);
+
+  &:hover {
+    color: #000;
+    opacity: .7;
+
+    .b-award__controls {
+      transform: translateX(10px);
+    }
+  }
+
+  & + .b-award {
+    margin-left: 25px;
+  }
+
+  &__media {
+    width: 122px;
+    margin-bottom: auto;
+  }
+
+  &__text {
+    padding: 0 10px;
+    line-height: 1.4;
+  }
+
+  &__controls {
+    margin-top: auto;
+    margin-left: auto;
+    position: relative;
+    transition: .2s ease;
+  }
+}
+
+
+.w-awards {
+  display: flex;
+  justify-content: center;
+
+  & > .b-award {
+    flex: 1 1 25%;
+  }
+
+  & + .b-header1 {
+    margin-top: 42px;
+  }
+
+  &__outer {
+    color: #000;
+    padding: 77px 0;
+    overflow: hidden;
+    min-height: 830px;
+    position: relative;
+    background: url("../img/homepage/white-tetxture/white-tetxture-background.jpg") no-repeat center;
+    background-size: cover;
+
+    .w-awards {
+      margin: 0 auto;
+    }
+
+    & > .container {
+      max-width: 930px;
+    }
+
+    & > .animated__image1 {
+      animation: wobble-hor-bottom 4s infinite both;
+      top: 50px;
+      left: 15px;
+      width: 195px;
+      position: absolute;
+    }
+
+    & > .animated__image2 {
+      animation: wobble-ver-right 4s infinite both;
+      top: 30%;
+      width: 239px;
+      right: -10px;
+      position: absolute;
+    }
+  }
+}
+
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+@keyframes wobble-ver-right {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateY(-30px) rotate(6deg);
+  }
+  30% {
+    transform: translateY(15px) rotate(-6deg);
+  }
+  45% {
+    transform: translateY(-15px) rotate(3.6deg);
+  }
+  60% {
+    transform: translateY(9px) rotate(-2.4deg);
+  }
+  75% {
+    transform: translateY(-6px) rotate(1.2deg);
+  }
+}
+
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

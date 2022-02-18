@@ -7,6 +7,7 @@
   color: #fff;
   display: flex;
   font-size: 24px;
+  min-height: 80px;
   font-weight: bold;
   border-radius: 40px;
   align-items: center;
@@ -15,6 +16,12 @@
   background-color: #b0352b;
 
   & > .link__icon {
-    width: 11px;
+    width: 25px;
+    margin-left: 5px;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #A42A21;
   }
 }

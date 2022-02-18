@@ -1,3 +1,18 @@
+.b-social__links {
+  display: flex;
+
+  & > a {
+    width: 20px;
+  }
+}
+
+
+.w-contacts {
+  color: #fff;
+  display: flex;
+  padding: 50px;
+  background-color: #3d4b66;
+}
 .w-description {
   color: #fff;
   text-align: center;
@@ -41,16 +56,19 @@
       background-color: #2b344a;
     }
   }
+
   & > .layer-2 {
     z-index: 2;
     background: url("../img/homepage/parallax/mountain-2/mountain-2.png");
   }
+
   & > .layer-3 {
     z-index: 1;
     background: url("../img/homepage/parallax/mountain-3/mountain-3.png");
   }
 }
 .w-price {
+  padding: 80px 0;
   overflow: hidden;
   min-height: 800px;
   position: relative;
@@ -73,5 +91,15 @@
     position: absolute;
     background: url("../img/homepage/bullet-hole-bg/bullet-hole-bg.png") no-repeat center;
     background-size: cover;
+  }
+}
+.w-instagram {
+  height: 278px;
+  position: relative;
+  background: url("../img/homepage/wood-bg/bitmap.jpg") repeat-y;
+
+  .b-insta__plugin {
+    position: relative;
+    transform: translateY(-65%);
   }
 }

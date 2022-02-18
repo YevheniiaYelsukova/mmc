@@ -1,0 +1,15 @@
+.b-map {
+  width: 625px;
+  height: 635px;
+  display: flex;
+  padding-top: 46px;
+  justify-content: center;
+  background: url("../img/homepage/map/group-23@2x.png") no-repeat center;
+  background-size: cover;
+
+
+  &__inner {
+    width: 510px;
+    height: 430px;
+  }
+}

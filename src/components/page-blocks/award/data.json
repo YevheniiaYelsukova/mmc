@@ -1,0 +1,18 @@
+[
+  {
+    "image": "img/sprite.svg#sprite--award-icon-ribbon",
+    "text": "Voted Best Mountain\nCoaster in 2021"
+  },
+  {
+    "image": "img/sprite.svg#sprite--award-icon-star",
+    "text": "Top Moutain\nCoaster in Gatlinburg\n& Pigeon Forge"
+  },
+  {
+    "image": "img/sprite.svg#sprite--award-icon-trophy",
+    "text": "Most Thrilling Moutain\nCoaster in Gatlinburg"
+  },
+  {
+    "image": "img/sprite.svg#sprite--award-icon-certificate",
+    "text": "Best Moutain\nCoaster in Gatlinburg"
+  }
+]
