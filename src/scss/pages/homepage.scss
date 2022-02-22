@@ -2,7 +2,11 @@
   display: flex;
 
   & > a {
-    width: 20px;
+    width: 26px;
+
+    & + a {
+      margin-left: 15px;
+    }
   }
 }
 
@@ -10,8 +14,58 @@
 .w-contacts {
   color: #fff;
   display: flex;
-  padding: 50px;
+  padding: 60px 15px 150px;
+  justify-content: center;
   background-color: #3d4b66;
+
+  &__map {
+    z-index: 1;
+    position: relative;
+  }
+
+  &__body {
+    z-index: 1;
+    font-size: 18px;
+    max-width: 580px;
+    line-height: 24px;
+    padding-top: 70px;
+    padding-left: 80px;
+    position: relative;
+
+    .contacts__info {
+      margin-bottom: 100px;
+
+      .b-social__links {
+        margin: 30px 0;
+      }
+
+      &-link {
+        color: #fff;
+        margin-bottom: 22px;
+        display: inline-block;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .b-header1 {
+        margin-bottom: 5px;
+      }
+    }
+
+    .contacts__form {
+
+      .b-contacts__form {
+        margin-top: 20px;
+      }
+
+      .b-header1 {
+        line-height: 1.1;
+        margin-bottom: 7px;
+      }
+    }
+  }
 }
 .w-description {
   color: #fff;
@@ -97,6 +151,7 @@
   height: 278px;
   position: relative;
   background: url("../img/homepage/wood-bg/bitmap.jpg") repeat-y;
+  background-size: cover;
 
   .b-insta__plugin {
     position: relative;

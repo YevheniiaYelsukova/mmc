@@ -1,0 +1,48 @@
+.b-weather__widget {
+  top: 95%;
+  right: 50%;
+  opacity: 0;
+  z-index: 1;
+  width: 340px;
+  padding: 10px;
+  visibility: hidden;
+  min-height: 465px;
+  border-radius: 4px;
+  position: absolute;
+  background-color: #fff;
+  transform: translateX(50%);
+  transition: all ease .2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+
+  &:after {
+    top: -11px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    border-style: solid;
+    transition: all ease .2s;
+    transform: translateX(-50%);
+    border-width: 0 10.5px 12px 10.5px;
+    border-color: transparent transparent #ffffff transparent;
+  }
+}
+
+
+.b-top__menu-item {
+
+  &:hover {
+
+    & > .sub-menu {
+      top: 100%;
+      opacity: 1;
+      z-index: 100;
+      visibility: visible;
+    }
+
+    & > .b-top__menu-link {
+      opacity: .8;
+    }
+  }
+}

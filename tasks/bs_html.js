@@ -21,6 +21,8 @@ module.exports = function bs_html() {
 		logLevel: 'info',
 		logConnections: true,
 		logFileChanges: true,
-		open: true
+		open: true,
+		tunnel: true,
+		online: true
 	})
 }

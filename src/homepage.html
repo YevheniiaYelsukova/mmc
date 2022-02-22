@@ -87,15 +87,16 @@
         </div><!--w-contacts__map-->
 
         <div class="w-contacts__body">
-          <section>
+          <section class="contacts__info">
             <h1 class="b-header1">
               Stay Connected
             </h1><!--b-header1-->
 
             <p>
               123 Road Ave Gatlinburg, TN 12345
-              <a href="#">Get Directions</a>
             </p>
+
+            <a class="contacts__info-link" href="#">Get Directions</a>
 
             <p>
               info@website.com  |  865-123-4567
@@ -114,7 +115,7 @@
             </nav><!--b-social__link-->
           </section>
 
-          <section>
+          <section class="contacts__form">
             <h1 class="b-header1">
               Get the Latest News & Special Offers
             </h1><!--b-header1-->
@@ -123,15 +124,14 @@
               Subscribe to our newsletter, special offers and promotional emails.
             </p>
 
-            <form>
-              <input type="text" class="b-input">
+            <form class="b-contacts__form">
+              <input type="text" class="b-input" placeholder="Email Address">
 
               <a href="#" class="b-btn__link btn">
-                Get Tickets
-                <img class="link__icon img-fluid" src="img/sprite.svg#sprite--arrow-forward">
-              </a>
-            </form>
-          </section>
+                Sign Up
+              </a><!--b-btn__link-->
+            </form><!--b-contacts__form-->
+          </section><!--contacts__form-->
         </div><!--w-contacts__body-->
       </section><!--w-contacts-->
     </main>
@@ -145,6 +145,7 @@
 <script src="js/libs.min.js"></script>
 <script src="js/01_fixed-nav.js"></script>
 <script src="js/02_parallax-home.js"></script>
+<script src="js/03_search.js"></script>
 </body>
 
 </html>

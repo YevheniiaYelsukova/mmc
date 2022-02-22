@@ -1,0 +1,23 @@
+.b-contacts__form {
+  display: flex;
+
+  & > .b-input {
+    flex: 1 1 auto;
+  }
+
+  & > .b-btn__link {
+    min-width: 120px;
+    font-size: 18px;
+    min-height: unset;
+    padding: 5px 10px;
+    margin-left: 15px;
+    text-transform: capitalize;
+  }
+}
+.b-input {
+  width: 100%;
+  color: #333;
+  border: none;
+  padding: 20px;
+  border-radius: 4px;
+}

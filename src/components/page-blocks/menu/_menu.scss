@@ -34,3 +34,45 @@
     margin: 0 auto 0 25px;
   }
 }
+.w-search {
+  top: 0;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  padding-right: 35px;
+  margin-top: 0 !important;
+  background-color: #2b344a;
+
+  &.show {
+    display: flex;
+  }
+
+  & > .btn {
+    padding: 0;
+    width: 36px;
+  }
+
+  & > .search-form {
+    width: 100%;
+    max-width: 85%;
+    margin-left: auto;
+    padding-left: 45px;
+    position: relative;
+    padding-right: 15px;
+
+    & > .prepend__icon {
+      left: 0;
+      top: 50%;
+      width: 36px;
+      position: absolute;
+      transform: translateY(-50%);
+    }
+
+    .b-input {
+      color: #fff;
+      height: 60px;
+      border: 1px solid #3d4458;
+      background-color: #40485c;
+    }
+  }
+}

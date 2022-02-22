@@ -1,10 +1,15 @@
 .b-top__menu {
+  height: 100%;
   display: flex;
   align-items: center;
   transition: height .2s ease;
 
   &-item {
+    height: 100%;
+    display: flex;
     margin-left: 30px;
+    position: relative;
+    align-items: center;
 
     &.time__link {
       margin-left: 70px;

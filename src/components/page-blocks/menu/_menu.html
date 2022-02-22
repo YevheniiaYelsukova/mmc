@@ -22,20 +22,31 @@
     </a>
   </nav>
 
-  <div class="">
-    <button class="btn b-search__btn"
-            type="button"
-            data-bs-toggle="dropdown"
-            data-bs-auto-close="outside"
-            data-bs-display="static"
-            aria-expanded="false">
+  <div>
+    <button
+      id="search__btn"
+      class="btn b-search__btn"
+      type="button"
+      data-bs-toggle="dropdown"
+      data-bs-auto-close="outside"
+      data-bs-display="static"
+      aria-expanded="false"
+    >
       <img class="img-fluid" src="img/sprite.svg#sprite--search-black">
     </button>
 
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Menu item</a></li>
-      <li><a class="dropdown-item" href="#">Menu item</a></li>
-      <li><a class="dropdown-item" href="#">Menu item</a></li>
-    </ul>
+    <div class="w-search dropdown-menu">
+      <form class="search-form" autocomplete="off">
+        <img class="prepend__icon img-fluid" src="img/sprite.svg#sprite--search">
+
+        <div class="w-input">
+          <input id="search__input" type="text" class="b-input" placeholder="Enter Keyword">
+        </div>
+      </form>
+
+      <button id="close__btn" class="btn">
+        <img class="img-fluid" src="img/sprite.svg#sprite--close">
+      </button>
+    </div>
   </div>
 </section>
