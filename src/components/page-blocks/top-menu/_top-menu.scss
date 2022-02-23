@@ -11,9 +11,18 @@
     position: relative;
     align-items: center;
 
+    @include respond-to-max(1000) {
+      display: none;
+    }
+
     &.time__link {
       margin-left: 70px;
       margin-right: 30px;
+
+      @include respond-to-max(1000) {
+        display: flex;
+        margin: 0 auto;
+      }
     }
 
     &.phone__link {
@@ -53,4 +62,8 @@
   background-repeat-y: no-repeat;
   background-repeat-x: repeat;
   background-position: right;
+
+  @include respond-to-max(1000) {
+    justify-content: center;
+  }
 }

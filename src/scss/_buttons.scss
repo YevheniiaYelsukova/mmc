@@ -1,3 +1,33 @@
+.b-btn__mob-menu {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  padding: 10px 5px;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+
+  @include respond-to-max(1000) {
+    display: flex;
+  }
+
+  & > span {
+    height: 3px;
+    width: 100%;
+    background-color: #131313;
+  }
+}
+.b-btn__mob-phone {
+  width: 40px;
+  padding: 5px;
+  height: 40px;
+  display: none;
+
+  @include respond-to-max(1000) {
+    display: block;
+  }
+}
 .b-search__btn {
   padding: 0;
   width: 36px;
@@ -23,5 +53,23 @@
   &:hover {
     color: #fff;
     background-color: #A42A21;
+  }
+}
+
+
+.sbi_follow_btn {
+  color: #111;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 33px;
+  border-radius: 30px;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #000;
+
+  &:hover {
+    color: #111;
+    opacity: .6;
   }
 }

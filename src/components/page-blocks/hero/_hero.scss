@@ -34,6 +34,11 @@
   min-height: calc(100vh - 139px);
   font-family: 'COCOGOOSELETTERPRESS', sans-serif;
 
+  &.homepage {
+    background: url("../img/homepage/hero-bg/feature-image.jpg") no-repeat center;
+    background-size: cover;
+  }
+
   &__inner {
     z-index: 5;
     padding: 0 15px;

@@ -1,4 +1,10 @@
 <section class="w-menu">
+  <button class="b-btn__mob-menu btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
   <a href="#" class="b-logo"></a>
 
   <nav class="b-menu">
@@ -22,11 +28,11 @@
     </a>
   </nav>
 
-  <div>
+  <div class="w-menu__search">
     <button
+      type="button"
       id="search__btn"
       class="btn b-search__btn"
-      type="button"
       data-bs-toggle="dropdown"
       data-bs-auto-close="outside"
       data-bs-display="static"
@@ -49,4 +55,8 @@
       </button>
     </div>
   </div>
+
+  <a href="tel:865-123-4567" class="b-btn__mob-phone">
+    <img class="img-fluid" src="img/sprite.svg#sprite--phone-black">
+  </a>
 </section>

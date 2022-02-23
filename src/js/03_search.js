@@ -4,8 +4,6 @@
 
   const dropdown = new bootstrap.Dropdown(btnSearch);
 
-  console.log(dropdown)
-
   btnClose.addEventListener('click', function() {
     dropdown.hide();
   });

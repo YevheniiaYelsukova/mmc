@@ -1,5 +1,9 @@
 .b-menu {
 
+  @include respond-to-max(1000) {
+    display: none;
+  }
+
   &__item {
     color: #000;
     font-size: 18px;
@@ -30,6 +34,29 @@
   background-repeat-y: no-repeat;
   background-repeat-x: repeat;
 
+  @include respond-to-max(1000) {
+    justify-content: center;
+  }
+
+  &__search {
+
+    @include respond-to-max(1000) {
+      display: none;
+    }
+  }
+
+  .b-logo {
+
+    @include respond-to-max(1100) {
+      width: 150px;
+      margin: 0 auto;
+    }
+
+    @include respond-to-max(1000) {
+      height: 110px;
+    }
+  }
+
   .b-menu {
     margin: 0 auto 0 25px;
   }
@@ -39,6 +66,7 @@
   width: 100%;
   border: none;
   border-radius: 0;
+  padding-left: 20px;
   padding-right: 35px;
   margin-top: 0 !important;
   background-color: #2b344a;
