@@ -1,0 +1,47 @@
+.b-mob__menu {
+  background: url("../img/homepage/white-tetxture/white-tetxture-background.jpg") no-repeat center;
+  background-size: cover;
+
+  .b-menu {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+
+      & + .b-menu__item {
+        margin-left: 0;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  & > .modal-header {
+    border: none;
+
+    .btn-close {
+      margin-left: 0;
+    }
+  }
+
+  & > .modal-body {
+    padding-left: 55px;
+  }
+
+  & > .modal-footer {
+    margin-top: auto;
+    background-color: #2b344a;
+
+    .search-form {
+      width: 100%;
+      display: flex;
+
+      & > .prepend__icon {
+        width: 35px;
+      }
+
+      & > .w-input {
+        width: 100%;
+      }
+    }
+  }
+}

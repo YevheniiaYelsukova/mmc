@@ -11,6 +11,15 @@
     text-decoration: none;
     text-transform: uppercase;
 
+    @include respond-to-max(1000) {
+      display: flex;
+    }
+
+    & > .menu__link-icon {
+      width: 25px;
+      margin-left: 3px;
+    }
+
     &:hover {
       color: #000;
       text-decoration: underline;
@@ -19,6 +28,10 @@
     & + .b-menu__item {
       margin-left: 26px;
     }
+  }
+
+  & + .b-menu {
+    margin-top: 50px;
   }
 }
 

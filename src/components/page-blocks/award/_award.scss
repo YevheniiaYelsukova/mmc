@@ -80,6 +80,11 @@
       left: 15px;
       width: 195px;
       position: absolute;
+
+      @include respond-to-max(1000) {
+        display: none;
+        animation: none;
+      }
     }
 
     & > .animated__image2 {
@@ -88,6 +93,11 @@
       width: 239px;
       right: -10px;
       position: absolute;
+
+      @include respond-to-max(1000) {
+        display: none;
+        animation: none;
+      }
     }
   }
 }
