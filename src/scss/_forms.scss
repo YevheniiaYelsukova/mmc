@@ -1,6 +1,10 @@
 .b-contacts__form {
   display: flex;
 
+  @include respond-to-max(580) {
+    flex-direction: column;
+  }
+
   & > .b-input {
     flex: 1 1 auto;
   }
@@ -12,6 +16,11 @@
     padding: 5px 10px;
     margin-left: 15px;
     text-transform: capitalize;
+
+    @include respond-to-max(580) {
+      height: 50px;
+      margin: 15px 0 0;
+    }
   }
 }
 .b-input {

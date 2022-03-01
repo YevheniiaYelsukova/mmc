@@ -24,6 +24,10 @@
 
   & + .b-award {
     margin-left: 25px;
+
+    @include respond-to-max(768) {
+      margin: 25px 0 0;
+    }
   }
 
   &__media {
@@ -48,6 +52,10 @@
 .w-awards {
   display: flex;
   justify-content: center;
+
+  @include respond-to-max(768) {
+    flex-direction: column;
+  }
 
   & > .b-award {
     flex: 1 1 25%;

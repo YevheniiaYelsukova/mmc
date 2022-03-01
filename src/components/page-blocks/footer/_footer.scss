@@ -7,17 +7,29 @@
   flex-direction: column;
   background-color: #2b344a;
 
-  & > .b-logo {
-    margin-bottom: 20px;
+  @include respond-to-max(768) {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
-  &__image {
+  &:before {
+    top: -100%;
     left: 0;
-    top: -57%;
     z-index: 0;
+    content: "";
     width: 100%;
+    height: 450px;
     position: absolute;
     pointer-events: none;
+    background: url("../img/footer/footer-mountains/group-26.png") no-repeat center;
+
+    @include respond-to-max(768) {
+      top: -50%;
+    }
+  }
+
+  & > .b-logo {
+    margin-bottom: 20px;
   }
 
   &__menu {
@@ -25,6 +37,14 @@
     font-weight: bold;
     margin-bottom: 6px;
     text-transform: uppercase;
+
+    @include respond-to-max(768) {
+      width: 100%;
+      display: flex;
+      margin-bottom: 14px;
+      align-items: center;
+      flex-direction: column;
+    }
 
     & > a {
       color: #fff;
@@ -36,6 +56,10 @@
 
       & + a {
         margin-left: 30px;
+
+        @include respond-to-max(768) {
+          margin: 15px 0 0;
+        }
       }
     }
   }

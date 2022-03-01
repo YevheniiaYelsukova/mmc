@@ -2,14 +2,26 @@
   width: 625px;
   height: 635px;
   display: flex;
-  padding-top: 46px;
+  position: relative;
   justify-content: center;
   background: url("../img/homepage/map/group-23@2x.png") no-repeat center;
   background-size: cover;
 
+  @include respond-to-max(768) {
+    width: 300px;
+    height: 300px;
+  }
 
   &__inner {
-    width: 510px;
-    height: 430px;
+    left: 50%;
+    top: 50px;
+    width: 80%;
+    height: 65%;
+    position: absolute;
+    transform: translateX(-50%);
+
+    @include respond-to-max(768) {
+     top: 20px;
+    }
   }
 }

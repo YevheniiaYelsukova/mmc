@@ -6,6 +6,10 @@
     margin-bottom: 7px;
     letter-spacing: -4.4px;
 
+    @include respond-to-max(580) {
+      font-size: 80px;
+    }
+
     &-sub {
       font-size: 34px;
     }
@@ -19,7 +23,6 @@
     font-family: 'Kreon', sans-serif;
   }
 }
-
 
 
 .w-hero {

@@ -25,6 +25,7 @@
   background-color: #3d4b66;
 
   @include respond-to-max(1000) {
+    align-items: center;
     flex-direction: column;
   }
 
@@ -41,6 +42,11 @@
     padding-top: 70px;
     padding-left: 80px;
     position: relative;
+
+    @include respond-to-max(1000) {
+      max-width: 100%;
+      padding: 70px 15px 0;
+    }
 
     .contacts__info {
       margin-bottom: 100px;
@@ -168,8 +174,17 @@
   background: url("../img/homepage/wood-bg/bitmap.jpg") repeat-y;
   background-size: cover;
 
+  @include respond-to-max(768) {
+    height: auto;
+    padding: 30px 0;
+  }
+
   .b-insta__plugin {
     position: relative;
     transform: translateY(-65%);
+
+    @include respond-to-max(768) {
+      transform: translateY(0);
+    }
   }
 }
