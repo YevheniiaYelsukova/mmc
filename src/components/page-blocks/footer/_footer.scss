@@ -8,6 +8,7 @@
   background-color: #2b344a;
 
   @include respond-to-max(768) {
+    text-align: center;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -70,6 +71,15 @@
 
     & > li {
       position: relative;
+
+      & + li {
+
+        &:before {
+          margin: 0 7px;
+          content: "\2022";
+          vertical-align: middle;
+        }
+      }
 
       & > a {
         color: #fff;

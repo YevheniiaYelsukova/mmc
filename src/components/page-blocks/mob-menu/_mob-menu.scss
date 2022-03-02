@@ -10,7 +10,14 @@
 
       & + .b-menu__item {
         margin-left: 0;
-        margin-top: 15px;
+        margin-top: 11px;
+      }
+    }
+
+    &.text-capitalize {
+
+      & > .b-menu__item {
+        text-transform: capitalize;
       }
     }
   }
@@ -19,12 +26,20 @@
     border: none;
 
     .btn-close {
+      opacity: 1;
+      color: #000;
       margin-left: 0;
+      font-size: 20px;
+
+      &:hover {
+        opacity: .5;
+      }
     }
   }
 
   & > .modal-body {
-    padding-left: 55px;
+    padding-top: 0;
+    padding-left: 66px;
   }
 
   & > .modal-footer {
@@ -37,10 +52,15 @@
 
       & > .prepend__icon {
         width: 35px;
+        margin: 0 8px 0 0;
       }
 
       & > .w-input {
         width: 100%;
+
+        .b-input {
+          background-color: #40485c;
+        }
       }
     }
   }

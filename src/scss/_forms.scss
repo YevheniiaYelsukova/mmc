@@ -18,8 +18,9 @@
     text-transform: capitalize;
 
     @include respond-to-max(580) {
+      width: 50%;
       height: 50px;
-      margin: 15px 0 0;
+      margin: 15px auto 0;
     }
   }
 }

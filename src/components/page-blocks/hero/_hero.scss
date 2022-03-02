@@ -12,6 +12,10 @@
 
     &-sub {
       font-size: 34px;
+
+      @include respond-to-max(580) {
+        font-size: 28px;
+      }
     }
   }
 

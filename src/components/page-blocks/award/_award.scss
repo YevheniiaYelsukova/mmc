@@ -25,9 +25,9 @@
   & + .b-award {
     margin-left: 25px;
 
-    @include respond-to-max(768) {
-      margin: 25px 0 0;
-    }
+    //@include respond-to-max(768) {
+    //  margin: 25px 0 0;
+    //}
   }
 
   &__media {
@@ -50,15 +50,24 @@
 
 
 .w-awards {
+  z-index: 1;
   display: flex;
+  position: relative;
   justify-content: center;
 
   @include respond-to-max(768) {
-    flex-direction: column;
+    padding: 10px 0;
+    overflow-x: auto;
+    justify-content: flex-start;
   }
 
   & > .b-award {
-    flex: 1 1 25%;
+    flex: 1 0 25%;
+
+    @include respond-to-max(768) {
+     flex: 1 0 50%;
+      min-width: 250px;
+    }
   }
 
   & + .b-header1 {
@@ -73,6 +82,11 @@
     position: relative;
     background: url("../img/homepage/white-tetxture/white-tetxture-background.jpg") no-repeat center;
     background-size: cover;
+
+    @include respond-to-max(768) {
+      display: flex;
+      align-items: center;
+    }
 
     .w-awards {
       margin: 0 auto;
@@ -89,9 +103,9 @@
       width: 195px;
       position: absolute;
 
-      @include respond-to-max(1000) {
-        display: none;
-        animation: none;
+      @include respond-to-max(768) {
+        left: 40%;
+        z-index: 0;
       }
     }
 
@@ -102,9 +116,8 @@
       right: -10px;
       position: absolute;
 
-      @include respond-to-max(1000) {
-        display: none;
-        animation: none;
+      @include respond-to-max(768) {
+        top: 70%;
       }
     }
   }
