@@ -1,0 +1,8 @@
+.w-buy-tickets {
+  background: url("../img/white-tetxture/white-tetxture-background.jpg");
+
+  & > .w-tickets {
+    top: -250px;
+    position: relative;
+  }
+}

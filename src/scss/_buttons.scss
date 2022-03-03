@@ -54,6 +54,31 @@
     color: #fff;
     background-color: #A42A21;
   }
+
+  &.btn-outline {
+    color: #b0352b;
+    background-color: #fff;
+    border: 4px solid #b0352b;
+
+    &:hover {
+      color: #A42A21;
+      border-color: #A42A21;
+    }
+  }
+
+  &.btn-dashed {
+    color: #fff;
+    font-size: 22px;
+    min-height: auto;
+    padding: 15px 25px;
+    border: 2px dashed #fff;
+    background-color: transparent;
+
+    &:hover {
+      color: #A42A21;
+      border-color: #A42A21;
+    }
+  }
 }
 
 

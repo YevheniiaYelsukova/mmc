@@ -1,0 +1,53 @@
+.b-page__description {
+  color: #fff;
+  max-width: 900px;
+  margin-top: -20px;
+}
+.b-page__head {
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1082px;
+  min-height: 156px;
+  position: relative;
+  border-radius: 4px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(-50%);
+  background: rgb(71,84,116);
+  background: linear-gradient(180deg, rgba(71,84,116,1) 0%, rgba(52,67,95,1) 100%);
+
+  .b-header1 {
+    font-size: 45px;
+    line-height: 1.2;
+  }
+
+  &-sub {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+
+.w-feature__image {
+  height: 346px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.w-page__description {
+  min-height: 672px;
+  background: url("../img/buy-tickets/description-bg.svg") no-repeat bottom;
+  background-color: #586a89;
+}

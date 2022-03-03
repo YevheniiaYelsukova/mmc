@@ -1,0 +1,20 @@
+.b-list__dots {
+  margin-bottom: 27px;
+
+  & > li {
+    position: relative;
+    padding-left: 10px;
+
+    &:before {
+      left: 0;
+      content: "\2022";
+      position: absolute;
+    }
+  }
+}
+.divider {
+  opacity: 1;
+  width: 100%;
+  margin: 20px 0 35px;
+  border-top: 2px dashed #979797;
+}
