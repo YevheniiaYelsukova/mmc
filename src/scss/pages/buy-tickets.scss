@@ -1,8 +1,24 @@
+@import "../base/mixins";
+
+.b-wood-bg {
+  height: 556px;
+  background: url("../img/wood-bg/group-2.jpg") center no-repeat;
+  background-size: cover;
+}
+
 .w-buy-tickets {
   background: url("../img/white-tetxture/white-tetxture-background.jpg");
+
+  @include respond-to-max(768) {
+    padding: 40px 0;
+  }
 
   & > .w-tickets {
     top: -250px;
     position: relative;
+
+    @include respond-to-max(768) {
+      top: unset;
+    }
   }
 }

@@ -4,6 +4,14 @@
   border-radius: 4px;
   border: 10px solid #3d4b66;
 
+  @include respond-to-max(1000) {
+    flex-direction: column;
+  }
+
+  @include respond-to-max(580) {
+    margin-bottom: 40px;
+  }
+
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -20,6 +28,10 @@
     justify-content: center;
     background-color: #3d4b66;
 
+    @include respond-to-max(1000) {
+      padding-bottom: 20px;
+    }
+
     &:after {
       content: "";
       width: 0;
@@ -31,6 +43,13 @@
       right: -30px;
       top: 50%;
       transform: translateY(-50%);
+
+      @include respond-to-max(1000) {
+        left: 50%;
+        transform-origin: left;
+        top: calc(100% - 30px);
+        transform: rotate(90deg);
+      }
     }
 
     & > .type {
@@ -51,6 +70,10 @@
     line-height: 27px;
     padding: 67px 62px;
 
+    @include respond-to-max(580) {
+      padding: 40px 15px;
+    }
+
     & > .title {
       margin: 0 0 10px;
       font-size: 22px;
@@ -61,13 +84,16 @@
 
 .w-discounts {
   margin-top: -148px;
+  margin-bottom: -363px;
   background: url("../img/white-tetxture/white-tetxture-background.jpg");
 
-  & > .container {
-    max-width: 1110px;
+  @include respond-to-max(768) {
+    margin-top: unset;
   }
 
-  .b-header2 {
-    margin-bottom: 25px;
+  & > .container {
+    z-index: 1;
+    max-width: 1110px;
+    position: relative;
   }
 }

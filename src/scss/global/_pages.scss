@@ -20,6 +20,11 @@
   background: rgb(71,84,116);
   background: linear-gradient(180deg, rgba(71,84,116,1) 0%, rgba(52,67,95,1) 100%);
 
+  @include respond-to-max(1000) {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
   .b-header1 {
     font-size: 45px;
     line-height: 1.2;
@@ -50,4 +55,9 @@
   min-height: 672px;
   background: url("../img/buy-tickets/description-bg.svg") no-repeat bottom;
   background-color: #586a89;
+
+  @include respond-to-max(768) {
+    padding: 40px 0;
+    min-height: auto;
+  }
 }
