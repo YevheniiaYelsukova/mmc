@@ -1,0 +1,45 @@
+<svg width="1050" height="656" viewBox="0 0 1050 656" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-1.9%" y="-2.9%" width="103.8%" height="106.6%" filterUnits="objectBoundingBox" id="lr1o46rvca">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+            <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15114012 0" in="shadowBlurOuter1"/>
+        </filter>
+        <filter x="-1.9%" y="-2.9%" width="103.8%" height="106.6%" filterUnits="objectBoundingBox" id="ejdtdn6ijc">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+            <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15114012 0" in="shadowBlurOuter1"/>
+        </filter>
+        <filter x="-1.9%" y="-2.9%" width="103.8%" height="106.6%" filterUnits="objectBoundingBox" id="w717vyi10e">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+            <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15114012 0" in="shadowBlurOuter1"/>
+        </filter>
+        <path id="c5296wfjbb" d="M14.444 25.627h994.462v578H14.444z"/>
+        <path id="z6mx8jtrbd" d="M14.444 25.627h994.462v578H14.444z"/>
+        <path id="r74peboasf" d="M14.444 25.627h994.462v578H14.444z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="scale(-1 1) rotate(-3 210.38 20119.235)">
+            <use fill="#000" filter="url(#lr1o46rvca)" xlink:href="#c5296wfjbb"/>
+            <use fill="#FFF" xlink:href="#c5296wfjbb"/>
+        </g>
+        <g transform="scale(-1 1) rotate(3 -223.937 -19478.608)">
+            <use fill="#000" filter="url(#ejdtdn6ijc)" xlink:href="#z6mx8jtrbd"/>
+            <use fill="#FFF" xlink:href="#z6mx8jtrbd"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 1036.906 11.373)">
+            <use fill="#000" filter="url(#w717vyi10e)" xlink:href="#r74peboasf"/>
+            <use fill="#FFF" xlink:href="#r74peboasf"/>
+        </g>
+        <text font-family="CaveatRoman-Bold, Caveat" font-size="37" font-weight="bold" fill="#333" transform="translate(13.556 11.373)">
+                    <tspan x="421.867" y="525.627">- Family Fun -</tspan>
+                </text>
+        <text font-family="CaveatRoman-Bold, Caveat" font-size="37" font-weight="bold" fill="#333" transform="translate(13.556 11.373)">
+                    <tspan x="395.93" y="568.627">Ride Day or Night</tspan>
+                </text>
+    </g>
+</svg>

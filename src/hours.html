@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"hours",
+"description":"hours",
+"keywords":"",
+"favicon":"img/favicons/favicon"
+})
+
+<body>
+<section class="w-app">
+  <section id="navbar" class="w-nav">
+    @@include('components/page-blocks/top-menu/_top-menu.html')
+
+    @@include('components/page-blocks/menu/_menu.html')
+  </section>
+
+  <section class="w-main">
+    <section class="w-feature__image">
+      <img src="./img/hours-page/feature-image/feature-image@2x.jpg" alt="" class="img-fluid">
+    </section><!--w-feature__image-->
+
+    <main>
+      <section class="b-page__head">
+        <h1 class="b-header1">
+          Hours & Location
+        </h1><!--b-header1-->
+
+        <h2 class="b-page__head-sub">
+          123 Road Ave Gatlinburg, TN 12345
+        </h2>
+      </section><!--b-page__head-->
+
+      <nav class="w-links fw-bold mb-5">
+        <a href="#">GET DIRECTIONS</a>
+      </nav>
+
+      <section class="w-calendar">
+        <div class="container">
+          <h1 class="b-header1 text-center mb-4">
+            Hours
+          </h1>
+
+          <div class="b-calendar" style="background-color: #d8d8d8;min-height: 922px"></div>
+        </div><!--container-->
+      </section><!--w-calendar-->
+
+      <section class="w-location">
+        <div class="container">
+          <h1 class="b-header1 text-center mb-1">
+            Location
+          </h1><!--b-header1-->
+
+          <div class="b-location">
+            <div class="b-location__inner">
+              <iframe
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d415044.91827185784!2d-83.8137537154902!3d35.63910394388086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8859521e1372343d%3A0xa04eac8607697ce3!2sGreat%20Smoky%20Mountains!5e0!3m2!1suk!2sua!4v1632122750347!5m2!1suk!2sua"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+            </div><!--b-location__inner-->
+          </div><!--b-location-->
+        </div><!--container-->
+      </section><!--w-location-->
+
+      @@include('components/page-blocks/action/_action.html')
+
+      @@include('components/page-blocks/stay-connected/_stay-connected.html')
+    </main>
+  </section><!--w-main-->
+
+  @@include('components/page-blocks/footer/_footer.html')
+</section><!--w-app-->
+
+@@include('components/page-blocks/mob-menu/_mob-menu.html')
+
+<script src="js/libs.min.js"></script>
+<script src="js/01_fixed-nav.js"></script>
+<script src="js/03_search.js"></script>
+</body>
+
+</html>
