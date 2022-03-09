@@ -1,0 +1,45 @@
+$accordion-button-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+
+.b-accordion {
+  color: #000;
+  margin-bottom: 100px;
+
+  &__item {
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+
+    &:first-of-type {
+      border-top: 1px solid #e8e8e8;
+    }
+  }
+
+  .accordion-button {
+    color: #000;
+    padding: 26px 0;
+    font-size: 22px;
+    font-weight: bold;
+
+    &:focus {
+      box-shadow: none;
+      border-color: unset;
+    }
+
+    &:not(.collapsed) {
+      color: #000;
+      box-shadow: none;
+      background-color: transparent;
+
+      &:after {
+        background-image: $accordion-button-active-icon;
+      }
+    }
+  }
+
+  .accordion-body {
+    color: #000;
+    font-size: 20px;
+    line-height: 27px;
+    padding: 0 0 20px 0;
+  }
+}

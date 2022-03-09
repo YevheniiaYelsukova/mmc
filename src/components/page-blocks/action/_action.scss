@@ -17,6 +17,15 @@
   background: url("../img/buy-tickets/buy-tickets-bg/buy-tickets-background.png") no-repeat center;
   background-size: contain;
 
+  @include respond-to-max(900) {
+    height: 100px;
+    font-size: 37px;
+    margin-bottom: -50px;
+  }
+
+  @include respond-to-max(480) {
+    font-size: 25px;
+  }
 
   &:hover {
     color: #ddd;

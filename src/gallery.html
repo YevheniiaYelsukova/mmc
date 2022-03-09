@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"gallery",
+"description":"gallery",
+"keywords":"",
+"favicon":"img/favicons/favicon"
+})
+
+<body>
+<section class="w-app">
+  <section id="navbar" class="w-nav">
+    @@include('components/page-blocks/top-menu/_top-menu.html')
+
+    @@include('components/page-blocks/menu/_menu.html')
+  </section>
+
+  <section class="w-main">
+    <main>
+      <section class="b-page__head">
+        <h1 class="b-header1">
+          Gallery
+        </h1><!--b-header1-->
+
+        <h2 class="b-page__head-sub">
+          Family Fun • Ride Day or Night!
+        </h2>
+      </section><!--b-page__head-->
+
+      <section class="w-faq">
+        <div class="container">
+          <p class="text-center">
+            Description goes here. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus
+            commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus
+            ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis vehicula cras vulputate euismod.
+          </p><!--b-text__description-->
+
+          <nav class="w-links mb-5">
+            <a href="#">Photos</a>
+            <a href="#">Videos</a>
+          </nav>
+        </div><!--container-->
+      </section>
+
+      @@include('components/page-blocks/action/_action.html')
+
+      @@include('components/page-blocks/stay-connected/_stay-connected.html')
+    </main>
+  </section><!--w-main-->
+
+  @@include('components/page-blocks/footer/_footer.html')
+</section><!--w-app-->
+
+@@include('components/page-blocks/mob-menu/_mob-menu.html')
+
+<script src="js/libs.min.js"></script>
+<script src="js/01_fixed-nav.js"></script>
+<script src="js/03_search.js"></script>
+</body>
+
+</html>

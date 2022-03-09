@@ -1,3 +1,5 @@
+@import "../base/mixins";
+
 .b-calendar {
   margin-bottom: 88px;
 }
@@ -10,6 +12,15 @@
   background: url("../img/hours-page/map/group-23@2x.png") no-repeat center;
   background-size: contain;
 
+  @include respond-to-max(1199) {
+    height: 580px;
+  }
+
+  @include respond-to-max(991) {
+    height: auto;
+    padding-bottom: 60%;
+  }
+
   &__inner {
     position: absolute;
     width: 90%;
@@ -17,6 +28,18 @@
     transform: translateX(-50%);
     top: 53px;
     height: 65%;
+
+    @include respond-to-max(991) {
+      width: 88%;
+    }
+
+    @include respond-to-max(991) {
+      height: 60%;
+    }
+
+    @include respond-to-max(480) {
+      top: 30px;
+    }
   }
 }
 
@@ -25,5 +48,14 @@
 
   & > .container {
     max-width: 1112px;
+  }
+}
+.w-location {
+
+  & > .container {
+
+    @include respond-to-max(991) {
+      max-width: 100%;
+    }
   }
 }
