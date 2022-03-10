@@ -101,6 +101,10 @@
   & > .b-ticket {
     margin: 0 5px;
 
+    &.with__media {
+      flex: 0 0 33.3333%;
+    }
+
     @include respond-to-max(768) {
       margin: 0 0 20px;
     }

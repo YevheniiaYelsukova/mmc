@@ -17,30 +17,34 @@
 
   <section class="w-main">
     <main>
-      <section class="b-page__head">
-        <h1 class="b-header1">
-          Gallery
-        </h1><!--b-header1-->
+      <section class="w-gallery">
+        <section class="b-page__head ">
+          <h1 class="b-header1">
+            Gallery
+          </h1><!--b-header1-->
 
-        <h2 class="b-page__head-sub">
-          Family Fun • Ride Day or Night!
-        </h2>
-      </section><!--b-page__head-->
+          <h2 class="b-page__head-sub">
+            Family Fun • Ride Day or Night!
+          </h2>
+        </section><!--b-page__head-->
 
-      <section class="w-faq">
-        <div class="container">
-          <p class="text-center">
+        <div class="w-container container">
+          <p class="text-center mb-4">
             Description goes here. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus
             commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus
             ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis vehicula cras vulputate euismod.
           </p><!--b-text__description-->
 
-          <nav class="w-links mb-5">
-            <a href="#">Photos</a>
+          <nav class="w-nav__gallery">
+            <a href="#" class="active">Photos</a>
             <a href="#">Videos</a>
-          </nav>
+          </nav><!--w-nav__gallery-->
         </div><!--container-->
-      </section>
+
+        <section class="b-gallery">
+          @@loop("components/page-blocks/gallery/_gallery.html", "components/page-blocks/gallery/data.json")
+        </section><!--b-gallery-->
+      </section><!--w-gallery-->
 
       @@include('components/page-blocks/action/_action.html')
 

@@ -1,0 +1,36 @@
+.w-gallery {
+  padding-top: 60px;
+  min-height: 100vh;
+  margin-bottom: -75px;
+  background: url("../img/white-tetxture/white-tetxture-background.jpg");
+
+  & > .b-page__head {
+    color: #000;
+    transform: none;
+    background: transparent;
+  }
+}
+.w-nav__gallery {
+  color: #000;
+  display: flex;
+  margin: 20px 0 50px;
+  align-items: center;
+  justify-content: center;
+
+  & > a {
+    color: inherit;
+    font-size: 20px;
+    line-height: 27px;
+    padding-bottom: 3px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+
+    &.active {
+      border-color: inherit;
+    }
+
+    & + a {
+      margin-left: 30px;
+    }
+  }
+}

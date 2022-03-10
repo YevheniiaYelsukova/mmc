@@ -7,8 +7,9 @@
     flex: 1 1 auto;
   }
 }
-
-
+.w-container {
+  max-width: 903px;
+}
 .w-nav {
 
   &.sticky {
