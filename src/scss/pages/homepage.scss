@@ -31,7 +31,16 @@
 
   &__map {
     z-index: 1;
+    width: 100%;
+    padding: 0 20px;
+    max-width: 625px;
     position: relative;
+
+    & > .b-frame {
+      width: 100%;
+      max-width: 625px;
+      min-height: 635px;
+    }
   }
 
   &__body {

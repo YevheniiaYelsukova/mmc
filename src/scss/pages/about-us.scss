@@ -1,0 +1,29 @@
+.w-about {
+  margin-top: -45px;
+
+  & > .container {
+    max-width: 1082px;
+  }
+
+  .media__col {
+    padding-right: 90px;
+
+    .b-frame {
+      min-height: 460px;
+
+      &__text {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .text__col {
+    color: #fff;
+    padding-left: 0;
+    padding-top: 92px;
+
+    .b-header1 {
+      margin-bottom: 3px;
+    }
+  }
+}

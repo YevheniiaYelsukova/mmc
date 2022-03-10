@@ -1,0 +1,47 @@
+.b-team {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.16);
+
+  &__inner {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f7f7f7;
+
+    .link {
+      margin-top: 20px;
+    }
+  }
+
+  &__media {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    border: 10px solid #586a89;
+
+    &:after {
+      top: 0;
+      left: 0;
+      width: 100%;
+      content: "";
+      height: 100%;
+      border-radius: 50%;
+      position: absolute;
+      border: 4px solid #fff;
+    }
+
+    & > img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}

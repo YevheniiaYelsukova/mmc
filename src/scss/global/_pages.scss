@@ -51,8 +51,12 @@
     object-fit: cover;
   }
 }
+.w-page__background {
+  background: url("../img/white-tetxture/white-tetxture-background.jpg");
+}
 .w-page__description {
   min-height: 672px;
+  padding-bottom: 50px;
   background: url("../img/buy-tickets/description-bg.svg") no-repeat bottom;
   background-color: #586a89;
 

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"about us",
+"description":"about us",
+"keywords":"",
+"favicon":"img/favicons/favicon"
+})
+
+<body>
+<section class="w-app">
+  <section id="navbar" class="w-nav">
+    @@include('components/page-blocks/top-menu/_top-menu.html')
+
+    @@include('components/page-blocks/menu/_menu.html')
+  </section>
+
+  <section class="w-main">
+    <section class="w-feature__image">
+      <img src="./img/about-us/feature-image/feature-image@2x.jpg" alt="" class="img-fluid">
+    </section><!--w-feature__image-->
+
+    <main>
+      <section class="w-page__description">
+        <section class="b-page__head">
+          <h1 class="b-header1">
+            About Us
+          </h1><!--b-header1-->
+
+          <h2 class="b-page__head-sub">
+            Family Fun • Ride Day or Night!
+          </h2>
+        </section><!--b-page__head-->
+
+        <section class="w-about">
+          <div class="container">
+            <div class="row">
+              <div class="media__col col">
+                <div class="w-frame">
+                  <div class="b-frame">
+                    <div class="b-frame__inner">
+                      <img src="./img/about-us/frame-image/map@2x.jpg" alt="" class="img-fluid">
+                    </div>
+                    <p class="b-frame__text fancy-text">
+                      - Make a Run…for Fun -
+                    </p>
+                  </div><!--b-frame-->
+                </div>
+              </div><!--col-->
+
+              <div class="text__col col">
+                <h1 class="b-header1">
+                  Mission Statement
+                </h1><!--b-header1-->
+
+                <p class="mb-3">
+                  Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis
+                  consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+                  eget lacinia odio sem nec elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum
+                  faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo
+                  luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                </p>
+
+                <a href="#" class="link">View Our History</a>
+              </div><!--col-->
+            </div><!--row-->
+          </div><!--container-->
+        </section><!--container-->
+      </section><!--w-page__description-->
+
+      <section class="w-page__background">
+        <section>
+          <h1 class="b-header1 text-center">
+            Our Team
+          </h1><!--b-header1-->
+
+          <section class="w-team">
+            @@loop("components/page-blocks/staff/_staff.html", "components/page-blocks/staff/data.json")
+          </section><!--w-team-->
+        </section>
+      </section><!--w-page__background-->
+
+      @@include('components/page-blocks/action/_action.html')
+
+      @@include('components/page-blocks/stay-connected/_stay-connected.html')
+    </main>
+  </section><!--w-main-->
+
+  @@include('components/page-blocks/footer/_footer.html')
+</section><!--w-app-->
+
+@@include('components/page-blocks/mob-menu/_mob-menu.html')
+
+<script src="js/libs.min.js"></script>
+<script src="js/01_fixed-nav.js"></script>
+<script src="js/03_search.js"></script>
+</body>
+
+</html>
