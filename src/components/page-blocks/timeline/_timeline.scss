@@ -1,0 +1,144 @@
+$dot-size: 17px;
+$circle-size: 36px;
+
+.b-timeline {
+  padding: 57px 0;
+  overflow: hidden;
+
+  &__item {
+    max-width: 400px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.16);
+
+    &:nth-child(odd) {
+      width: 50%;
+      clear: left;
+      float: left;
+      display: block;
+
+      .timeline__header {
+        padding-right: 20px;
+        background-color: #b37c2f;
+        justify-content: flex-end;
+
+        &:after {
+          background-color: #b37c2f;
+          left: calc(100% + #{$dot-size / 2});
+        }
+
+        &:before {
+          left: calc(100% + #{$circle-size} / 2)
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      float: right;
+      clear: right;
+
+      .timeline__header {
+        padding-left: 40px;
+        background-color: #3d4b66;
+        justify-content: flex-start;
+
+        &:after {
+          background-color: #3d4b66;
+          left: calc(#{$dot-size / 2});
+        }
+
+        &:before {
+          left: 0;
+        }
+      }
+    }
+
+    .timeline__header {
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      position: relative;
+      align-items: center;
+      background-color: #ccc;
+      border-radius: 4px 4px 0 0;
+
+      &:before {
+        top: 50%;
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        width: $circle-size;
+        height: $circle-size;
+        background-color: #fff;
+        border: 3px solid #636363;
+        transform: translateY(-50%);
+      }
+
+      &:after {
+        top: 50%;
+        content: "";
+        height: $dot-size;
+        width: $dot-size;
+        border-radius: 50%;
+        position: absolute;
+        background-color: #ccc;
+        transform: translateY(-50%);
+      }
+    }
+
+    .timeline__media {
+      margin: 0;
+      height: 211px;
+
+      & > .img-fluid {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .timeline__body {
+      padding: 15px 30px 35px;
+    }
+  }
+}
+
+
+.w-timeline {
+  padding: 0 15px;
+  max-width: 903px;
+  position: relative;
+  margin: 0 auto 100px;
+
+  &:after,
+  &:before {
+    left: 50%;
+    z-index: 1;
+    width: 21px;
+    height: 21px;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+    border: 5px solid #333;
+    transform: translateX(-50%);
+  }
+
+  &:after {
+    bottom: 0;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  & > .line {
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    background-color: #333;
+    transform: translateX(-50%);
+  }
+}

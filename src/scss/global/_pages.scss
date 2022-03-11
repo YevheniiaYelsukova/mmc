@@ -53,6 +53,15 @@
 }
 .w-page__background {
   background: url("../img/white-tetxture/white-tetxture-background.jpg");
+
+  & > hr {
+    opacity: 1;
+    height: 2px;
+    padding: 0 15px;
+    max-width: 1055px;
+    margin: 6px auto 90px;
+    background-color: #000;
+  }
 }
 .w-page__description {
   min-height: 672px;

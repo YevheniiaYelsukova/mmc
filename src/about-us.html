@@ -69,7 +69,7 @@
       </section><!--w-page__description-->
 
       <section class="w-page__background">
-        <section>
+        <section class="w-team__outer">
           <h1 class="b-header1 text-center">
             Our Team
           </h1><!--b-header1-->
@@ -77,7 +77,39 @@
           <section class="w-team">
             @@loop("components/page-blocks/staff/_staff.html", "components/page-blocks/staff/data.json")
           </section><!--w-team-->
+
+          <section class="w-join__team text-center">
+            <img src="img/sprite.svg#sprite--heart" alt="" class="team__img01">
+            <img src="img/sprite.svg#sprite--double-heart" alt="" class="team__img02">
+
+            <a href="#" class="b-btn__link btn">
+              Join our team
+              <img class="link__icon img-fluid" src="img/sprite.svg#sprite--arrow-forward">
+            </a>
+
+            <p>
+              Description goes here. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac
+              cursus
+              commodo, tortor mauris condimentum nibh, ut
+            </p>
+          </section>
         </section>
+
+        <hr>
+
+        <section class="w-history">
+          <h1 class="b-header1">
+            Our History
+          </h1><!--b-header1-->
+
+          <p class="mb-4 text-center">
+            Description goes here. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus
+            commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus
+            ac facilisis in, egestas eget quam.
+          </p>
+
+          @@include('components/page-blocks/timeline/_timeline.html')
+        </section><!--w-history-->
       </section><!--w-page__background-->
 
       @@include('components/page-blocks/action/_action.html')

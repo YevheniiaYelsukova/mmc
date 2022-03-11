@@ -16,11 +16,12 @@
   }
 
   &__media {
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
     overflow: hidden;
     position: relative;
     border-radius: 50%;
+    margin-bottom: 15px;
     border: 10px solid #586a89;
 
     &:after {
@@ -41,6 +42,7 @@
   }
 
   &__name {
+    line-height: 1;
     font-size: 24px;
     font-weight: bold;
   }
