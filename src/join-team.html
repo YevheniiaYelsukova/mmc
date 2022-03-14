@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"join team",
+"description":"join team",
+"keywords":"",
+"favicon":"img/favicons/favicon"
+})
+
+<body>
+<section class="w-app">
+  <section id="navbar" class="w-nav">
+    @@include('components/page-blocks/top-menu/_top-menu.html')
+
+    @@include('components/page-blocks/menu/_menu.html')
+  </section>
+
+  <section class="w-main">
+    <main>
+      <section class="w-page">
+        <section class="b-page__head">
+          <h1 class="b-header1">
+            Join our team
+          </h1><!--b-header1-->
+
+          <h2 class="b-page__head-sub">
+            Family Fun • Ride Day or Night!
+          </h2>
+        </section><!--b-page__head-->
+
+        <div class="w-container container">
+          <p class="text-center mt-4 mb-5">
+            Description goes here. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac
+            <a href="tel:(865)123-4567" class="link text-decoration-none fs-5 fw-bold">(865)123-4567</a>
+          </p><!--b-text__description-->
+
+          <section class="w-accordion">
+            <h1 class="b-header1 text-center mb-3">
+              Available positions
+            </h1><!--b-header1-->
+
+            <div class="b-accordion accordion" id="job-1">
+              <div class="b-accordion__item accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#job-1-1"
+                    aria-expanded="true"
+                  >
+                    Job Title Here
+                  </button>
+                </h2>
+
+                <div
+                  id="job-1-1"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#job-1"
+                >
+                  <div class="accordion-body">
+                    Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac,
+                    vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui.
+                    Fusce dapibus, tellus ac cursus commodo, tortor <a href="#" class="link">mauris</a> condimentum
+                    nibh, ut <a href="#" class="link">fermentum</a> massa justo
+                    sit amet risus. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna
+                    mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac
+                    cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo
+                    risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.
+                    Sed posuere consectetur est at lobortis.
+                  </div><!--accordion-body-->
+                </div><!--accordion-collapse-->
+              </div><!--b-accordion__item-->
+
+              <div class="b-accordion__item accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#job-1-2"
+                    aria-expanded="false"
+                  >
+                    Job Title Here
+                  </button>
+                </h2>
+                <div
+                  id="job-1-2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#job-1"
+                >
+                  <div class="accordion-body">
+                    Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac,
+                    vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui.
+                    Fusce dapibus, tellus ac cursus commodo, tortor <a href="#" class="link">mauris</a> condimentum
+                    nibh, ut <a href="#" class="link">fermentum</a> massa justo
+                    sit amet risus. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna
+                    mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac
+                    cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo
+                    risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.
+                    Sed posuere consectetur est at lobortis.
+                  </div><!--accordion-body-->
+                </div><!--accordion-collapse-->
+              </div><!--b-accordion__item-->
+            </div><!--b-accordion-->
+          </section><!--w-accordion-->
+        </div><!--container-->
+
+        <section class="w-application__form">
+          <section class="w-form">
+            <div class="w-form__inner">
+              <h2 class="b-header1 text-center">
+                Application Form
+              </h2>
+
+              <p class="w-form__text">
+                Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at
+                eros. Duis mollis, est non commodo luctus.
+              </p><!--w-form__text-->
+
+              <form class="b-form">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="w-form__input">
+                      <label for="" class="form-label">
+                        Name*
+                      </label>
+
+                      <input type="text" class="b-form__input form-control">
+                    </div><!--w-form__input-->
+                  </div><!--col-->
+
+                  <div class="col-md-6">
+                    <div class="w-form__input">
+                      <label for="" class="form-label">
+                        Email Address*
+                      </label>
+
+                      <input type="email" class="b-form__input form-control">
+                    </div><!--w-form__input-->
+                  </div><!--col-->
+                </div><!--row-->
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="w-form__input">
+                      <label for="" class="form-label">
+                        Phone Number*
+                      </label>
+
+                      <input type="text" class="b-form__input form-control">
+                    </div><!--w-form__input-->
+                  </div><!--col-->
+
+                  <div class="col-md-6">
+                    <div class="w-form__input">
+                      <label for="" class="form-label">
+                        Position Interested In
+                      </label>
+
+                      <input type="text" class="b-form__input form-control">
+                    </div><!--w-form__input-->
+                  </div><!--col-->
+                </div><!--row-->
+
+                <div class="row">
+                  <div class="col-12">
+                    <div class="w-form__input">
+                      <label for="" class="form-label">
+                        Why are you a good fit for the Moonshine Mountain Coaster?*
+                      </label>
+
+                      <textarea class="b-form__input form-control"></textarea>
+                    </div><!--w-form__input-->
+                  </div><!--col-->
+                </div><!--row-->
+
+                <div class="b-form__controls mt-3">
+                  <button type="submit" class="b-btn__link btn">
+                    Submit
+                  </button>
+                </div><!--b-form__controls-->
+              </form><!--b-form-->
+            </div><!--w-form__inner-->
+          </section><!--w-form-->
+        </section><!--w-application__form-->
+      </section><!--w-page-->
+
+      @@include('components/page-blocks/action/_action.html')
+
+      @@include('components/page-blocks/stay-connected/_stay-connected.html')
+    </main>
+  </section><!--w-main-->
+
+  @@include('components/page-blocks/footer/_footer.html')
+</section><!--w-app-->
+
+@@include('components/page-blocks/mob-menu/_mob-menu.html')
+
+<script src="js/libs.min.js"></script>
+<script src="js/01_fixed-nav.js"></script>
+<script src="js/03_search.js"></script>
+</body>
+
+</html>

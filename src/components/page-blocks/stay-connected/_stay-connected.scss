@@ -12,6 +12,10 @@
     flex-direction: column;
   }
 
+  @include respond-to-max(580) {
+    padding-top: 80px;
+  }
+
   & > .col {
     z-index: 1;
     flex: 0 1 595px;

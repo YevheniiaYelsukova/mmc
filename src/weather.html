@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 @@include('components/page-blocks/_head.html',{
 "lang":"en",
-"title":"gallery",
-"description":"gallery",
+"title":"weather",
+"description":"weather",
 "keywords":"",
 "favicon":"img/favicons/favicon"
 })
@@ -17,10 +17,10 @@
 
   <section class="w-main">
     <main>
-      <section class="w-gallery">
+      <section class="w-page">
         <section class="b-page__head">
           <h1 class="b-header1">
-            Gallery
+            Weather
           </h1><!--b-header1-->
 
           <h2 class="b-page__head-sub">
@@ -29,22 +29,19 @@
         </section><!--b-page__head-->
 
         <div class="w-container container">
-          <p class="text-center mb-4">
+          <p class="text-center mt-3 mb-5">
             Description goes here. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus
-            commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus
-            ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis vehicula cras vulputate euismod.
+            commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
           </p><!--b-text__description-->
-
-          <nav class="w-nav__gallery">
-            <a href="#" class="active">Photos</a>
-            <a href="#">Videos</a>
-          </nav><!--w-nav__gallery-->
         </div><!--container-->
 
-        <section class="b-gallery">
-          @@loop("components/page-blocks/gallery/_gallery.html", "components/page-blocks/gallery/data.json")
-        </section><!--b-gallery-->
-      </section><!--w-gallery-->
+        <section class="w-widget">
+          <div class="w-widget__inner" style="display:flex;align-items: center;justify-content: center">
+            widget goes here
+          </div>
+        </section><!--w-widget-->
+
+      </section><!--w-page-->
 
       @@include('components/page-blocks/action/_action.html')
 
