@@ -34,6 +34,7 @@
   &-link {
     color: #fff;
     font-size: 18px;
+    border-radius: 0;
     font-weight: bold;
     text-decoration: none;
 
@@ -65,5 +66,15 @@
 
   @include respond-to-max(1000) {
     justify-content: center;
+  }
+}
+
+@media (max-width:580px) {
+  .sb_instagram_header {
+    flex-direction: column;
+  }
+
+  #sbi_load {
+    margin: 15px 0 0;
   }
 }
