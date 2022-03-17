@@ -74,6 +74,11 @@
     border: 2px dashed #fff;
     background-color: transparent;
 
+    @include respond-to-max(768) {
+      font-size: 19px;
+      padding: 10px 15px;
+    }
+
     &:hover {
       color: #A42A21;
       border-color: #A42A21;

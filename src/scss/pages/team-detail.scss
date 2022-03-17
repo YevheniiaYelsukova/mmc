@@ -15,9 +15,9 @@
     flex: 0 1 533px;
     padding-top: 50px;
 
-    @include respond-to-max(900) {
-      order: 2;
-    }
+    //@include respond-to-max(900) {
+    //  order: 2;
+    //}
 
     .b-header1 {
       line-height: 1;
@@ -35,7 +35,6 @@
     padding-left: 50px;
 
     @include respond-to-max(900) {
-      order: 1;
       padding: 0 25px;
     }
   }

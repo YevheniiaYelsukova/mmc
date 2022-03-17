@@ -25,12 +25,17 @@
     margin-right: 15px;
   }
 
+  @include respond-to-max(580) {
+    margin: 0 auto;
+        border-radius: 0;
+  }
+
   .b-header1 {
     font-size: 45px;
     line-height: 1.2;
 
     @include respond-to-max(580) {
-      font-size: 38px;
+      font-size: 30px;
     }
   }
 
@@ -39,7 +44,7 @@
     font-weight: 500;
 
     @include respond-to-max(580) {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 }
@@ -69,6 +74,11 @@
     max-width: 1055px;
     margin: 6px auto 90px;
     background-color: #000;
+
+    @include respond-to-max(1000) {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
   }
 }
 .w-page__description {

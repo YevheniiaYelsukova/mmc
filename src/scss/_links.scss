@@ -5,6 +5,7 @@
   justify-content: center;
 
   @include respond-to-max(580) {
+    margin-bottom: 30px;
     flex-direction: column;
   }
 

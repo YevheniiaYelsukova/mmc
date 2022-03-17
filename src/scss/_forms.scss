@@ -109,6 +109,10 @@ textarea.b-form__input {
       font-size: 20px;
       font-weight: 500;
       margin-bottom: 7px;
+
+      @include respond-to-max(580) {
+        font-size: 18px;
+      }
     }
   }
 
@@ -119,6 +123,10 @@ textarea.b-form__input {
     line-height: 27px;
     text-align: center;
     margin: 0 auto 35px;
+
+    @include respond-to-max(580) {
+      font-size: 18px;
+    }
   }
 
   &__inner {
@@ -126,8 +134,16 @@ textarea.b-form__input {
     border-radius: 4px;
     background-color: #f7f7f7;
 
-    & > .b-header2 {
+    @include respond-to-max(768) {
+      padding: 45px 15px;
+    }
+
+    & > .b-header1 {
       margin-bottom: 8px;
+
+      @include respond-to-max(580) {
+        font-size: 24px;
+      }
     }
 
     & > .b-form {

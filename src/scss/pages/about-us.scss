@@ -66,12 +66,14 @@
   max-width: 680px;
   position: relative;
 
+  @include respond-to-max(580) {
+    padding-top: 140px;
+    padding-bottom: 60px;
+    margin-bottom: 80px!important;
+  }
+
   & > img {
     position: absolute;
-
-    @include respond-to-max(580) {
-      display: none;
-    }
   }
 
   & > .team__img01 {
@@ -79,6 +81,12 @@
     left: 30px;
     width: 110px;
     height: 112px;
+
+    @include respond-to-max(580) {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   & > .team__img02 {
@@ -86,6 +94,12 @@
     right: 60px;
     width: 97px;
     height: 97px;
+
+    @include respond-to-max(580) {
+      top: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   & > .b-btn__link {
@@ -101,6 +115,10 @@
   align-items: center;
   margin: 0 auto 120px;
   justify-content: center;
+
+  @include respond-to-max(580) {
+    margin-bottom: 20px;
+  }
 
   & > .b-team {
     margin: 15px;

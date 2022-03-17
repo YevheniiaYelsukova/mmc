@@ -14,7 +14,7 @@
 .w-location {
 
   & > .container {
-    padding: 0 40px;
+    padding: 0 30px;
 
     @include respond-to-max(991) {
       max-width: 100%;
@@ -25,5 +25,9 @@
     max-width: 980px;
     min-height: 590px;
     margin-bottom: 110px;
+
+    @include respond-to-max(580) {
+      min-height: 450px;
+    }
   }
 }
