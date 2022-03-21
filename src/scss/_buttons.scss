@@ -32,6 +32,13 @@
   padding: 0;
   width: 36px;
   height: 36px;
+
+  &:focus {
+    box-shadow: none;
+  }
+  &:hover {
+    border-color: transparent!important;
+  }
 }
 .b-btn__link {
   color: #fff;
