@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"live feed",
+"description":"live feed",
+"keywords":"",
+"favicon":"img/favicons/favicon"
+})
+
+<body>
+<section class="w-app">
+  <section id="navbar" class="w-nav">
+    @@include('components/page-blocks/top-menu/_top-menu.html')
+
+    @@include('components/page-blocks/menu/_menu.html')
+  </section>
+
+  <section class="w-main">
+    <main>
+      <section class="w-page">
+        <section class="b-page__head">
+          <h1 class="b-header1">
+            Search Results
+          </h1><!--b-header1-->
+        </section><!--b-page__head-->
+
+        <div class="w-container container">
+          <form class="b-search-result-form" autocomplete="off">
+            <img class="prepend__icon img-fluid" src="img/sprite.svg#sprite--search-black ">
+
+            <div class="w-input">
+              <input id="search__input" type="text" class="b-input" placeholder="Enter Keyword">
+            </div>
+          </form>
+
+          <div class="b-search-term">
+            Your searched for:
+            <strong class="term">Discount Tickets</strong>
+          </div>
+
+          <section class="w-search-result">
+            <div class="b-search-result">
+              <div class="title">
+                Search Result Title Here
+              </div>
+
+              <div class="text">
+                Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum
+                at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Fusce dapibus,
+                tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis
+              </div>
+            </div><!--b-search-result-->
+
+            <div class="b-search-result">
+              <div class="title">
+                Search Result Title Here
+              </div>
+
+              <div class="text">
+                Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum
+                at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Fusce dapibus,
+                tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis
+              </div>
+            </div><!--b-search-result-->
+
+            <div class="b-search-result">
+              <div class="title">
+                Search Result Title Here
+              </div>
+
+              <div class="text">
+                Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum
+                at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Fusce dapibus,
+                tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis
+              </div>
+            </div><!--b-search-result-->
+          </section><!--w-search-result-->
+
+          <nav class="b-pagination">
+            <a href="#" class="b-pagination-item active">1</a>
+            <a href="#" class="b-pagination-item">2</a>
+            <a href="#" class="b-pagination-item">3...</a>
+            <a href="#" class="b-pagination-item">Next »</a>
+          </nav>
+        </div><!--container-->
+      </section><!--w-page-->
+
+      @@include('components/page-blocks/action/_action.html')
+
+      @@include('components/page-blocks/stay-connected/_stay-connected.html')
+    </main>
+  </section><!--w-main-->
+
+  @@include('components/page-blocks/footer/_footer.html')
+</section><!--w-app-->
+
+@@include('components/page-blocks/mob-menu/_mob-menu.html')
+
+<script src="js/libs.min.js"></script>
+<script src="js/01_fixed-nav.js"></script>
+<script src="js/03_search.js"></script>
+</body>
+
+</html>
