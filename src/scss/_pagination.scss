@@ -1,0 +1,24 @@
+.b-pagination {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 160px;
+  justify-content: center;
+
+
+  & > .page-numbers {
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-decoration: none;
+
+    &:hover {
+      color: #b0352b;
+    }
+
+    &.current {
+      color: #b0352b;
+    }
+  }
+}
