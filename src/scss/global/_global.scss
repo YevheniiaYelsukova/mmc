@@ -40,7 +40,7 @@ figcaption {
 }
 
 p {
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
 .hide-scrollbar {
@@ -49,4 +49,8 @@ p {
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+i[class^="fa"] {
+  font-style: normal;
 }

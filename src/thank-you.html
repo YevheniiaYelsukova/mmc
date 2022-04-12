@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"thank you",
+"description":"thank you",
+"keywords":"",
+"favicon":"img/favicons/favicon"
+})
+
+<body>
+<section class="w-app">
+  <section id="navbar" class="w-nav">
+    @@include('components/page-blocks/top-menu/_top-menu.html')
+
+    @@include('components/page-blocks/menu/_menu.html')
+  </section>
+
+  <section class="w-main">
+    <main>
+      <section class="w-page">
+        <div class="w-thanks-page">
+          <div class="w-frame">
+            <div class="b-frame">
+              <div class="b-frame__inner text-center">
+                <div class="b-thank-you">
+                  <h1 class="b-header1">
+                    Thank You
+                  </h1>
+                  <p class="mb-4">
+                    A Moonshine Mountain Coaster representative will be in contact with you shorly.
+                  </p>
+                  <h2 class="b-header2">
+                    Connect with us
+                  </h2>
+                  <nav class="b-social__links">
+                    <a href="#">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </nav>
+                </div>
+
+                <div class="b-thank-you-media">
+                  <img src="https://picsum.photos/340/240" alt="" class="img-fluid">
+                  <img src="https://picsum.photos/340/240" alt="" class="img-fluid">
+                  <img src="https://picsum.photos/340/240" alt="" class="img-fluid">
+                </div><!--b-thank-you-media-->
+              </div><!--b-frame__inner-->
+            </div><!--b-frame-->
+          </div>
+        </div><!--w-thanks-page-->
+      </section><!--w-page-->
+
+      @@include('components/page-blocks/action/_action.html')
+
+      @@include('components/page-blocks/stay-connected/_stay-connected.html')
+    </main>
+  </section><!--w-main-->
+
+  @@include('components/page-blocks/footer/_footer.html')
+</section><!--w-app-->
+
+@@include('components/page-blocks/mob-menu/_mob-menu.html')
+
+<script src="js/libs.min.js"></script>
+<script src="js/01_fixed-nav.js"></script>
+<script src="js/03_search.js"></script>
+</body>
+
+</html>

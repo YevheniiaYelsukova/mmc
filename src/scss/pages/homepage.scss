@@ -5,6 +5,8 @@
 
   & > a {
     width: 26px;
+    color: inherit;
+    text-decoration: none;
 
     &:hover {
       opacity: .6;
