@@ -1,0 +1,93 @@
+@import "../base/mixins";
+
+.b-404 {
+
+  &__logo {
+    width: 100%;
+    max-width: 557px;
+    margin-bottom: 25px;
+
+    @include respond-to-max(580) {
+      width: 80%;
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    display: flex;
+    margin-top: auto;
+    min-height: 568px;
+    padding-top: 170px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: url("../img/404/footer-mountains/footer-mountains@3x.png") no-repeat center;
+    background-size: cover;
+
+    @include respond-to-max(1000) {
+      background-size: contain;
+      background-position: bottom;
+    }
+
+    @include respond-to-max(580) {
+      background-position: 0 70%;
+    }
+
+    &:after {
+
+      @include respond-to-max(580) {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        content: "";
+        height: 25%;
+        position: absolute;
+        background-color: #2b344a;
+      }
+    }
+
+    & > .b-logo {
+      width: 156px;
+
+      @include respond-to-max(1000) {
+        left: 50%;
+        bottom: 0;
+        top: unset;
+        position: absolute;
+        transform: translateX(-50%);
+      }
+
+      @include respond-to-max(580) {
+        width: 123px;
+      }
+    }
+  }
+}
+
+
+.w-404 {
+  min-height: 100vh;
+  position: relative;
+  padding-top: 100px;
+  flex-direction: column;
+  background: url("../img/404/bg/group-2.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  &__inner {
+    z-index: 1;
+    color: #fff;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: -230px;
+
+    & > .b-header1 {
+      font-size: 38px;
+
+      @include respond-to-max(580) {
+        font-size: 26px;
+      }
+    }
+  }
+}
