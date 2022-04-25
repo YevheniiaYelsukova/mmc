@@ -45,7 +45,9 @@
     flex: 1 0 90%;
     position: relative;
 
-    & > img, iframe {
+    & > img,
+    .acf-map.map,
+    iframe {
       top: 0;
       left: 0;
       width: 100%;

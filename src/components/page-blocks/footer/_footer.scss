@@ -23,6 +23,7 @@
     position: absolute;
     pointer-events: none;
     background: url("../img/footer/footer-mountains/group-26.png") no-repeat center;
+    background-size: cover;
 
     @include respond-to-max(768) {
       top: -50%;
