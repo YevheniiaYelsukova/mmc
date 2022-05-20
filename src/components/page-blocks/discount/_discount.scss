@@ -143,5 +143,12 @@
       width: 200px;
       display: block;
     }
+
+    @include respond-to-max(580) {
+      top: 66%;
+      right: -15px;
+      width: 200px;
+      display: block;
+    }
   }
 }

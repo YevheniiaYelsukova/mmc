@@ -8,6 +8,16 @@
   color: #000;
   font-size: 32px;
   font-weight: bold;
+  text-align: center;
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  @include respond-to-max(768) {
+    font-size: 24px;
+  }
 
   &__description {
     line-height: 27px;

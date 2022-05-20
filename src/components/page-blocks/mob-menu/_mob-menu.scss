@@ -5,6 +5,7 @@
   .b-menu {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
     &__item {
 
@@ -61,6 +62,10 @@
         .b-input {
           color: #fff;
           background-color: #40485c;
+
+          &::placeholder {
+            color: #fff;
+          }
         }
       }
     }

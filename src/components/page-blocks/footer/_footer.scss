@@ -27,11 +27,8 @@
 
     @include respond-to-max(768) {
       top: -50%;
-    }
-
-    @include respond-to-max(320) {
-      top: -32%;
       background-size: contain;
+      background-position: 50% 90%;
     }
   }
 

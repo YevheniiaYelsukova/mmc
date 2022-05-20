@@ -29,10 +29,6 @@
     background-size: cover;
   }
 
-  @include respond-to-max(480) {
-    font-size: 25px;
-  }
-
   &:hover {
     color: #ddd;
   }
