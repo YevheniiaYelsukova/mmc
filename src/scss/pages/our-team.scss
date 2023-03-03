@@ -1,0 +1,67 @@
+@import "../base/mixins";
+
+.w-team-page {
+  .b-team-wrapper {
+    position: relative;
+    padding-top: 90px;
+    background-image: url(../img/our-team/our-team-bg.jpg);
+    background-size: cover;
+    background-position-x: -4px;
+    margin-bottom: 120px;
+
+    @include respond-to-max(992) {
+      padding-top: 45px;
+    }
+
+    @include respond-to-max(580) {
+      margin-bottom: 20px;
+    }
+
+    .w-bottom-img {
+      height: 350px;
+      background-size: cover;
+
+      @include respond-to-max(768) {
+        height: 178px;
+      }
+    }
+  }
+
+  .b-page__head {
+    transform: translate(0);
+    background-image: url(../img/our-team/head-bg-page.png);
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+    max-width: 785px;
+    width: 100%;
+    min-height: 220px;
+    padding: 40px 0;
+    margin: 0 auto;
+    color: #363f4e;
+    border-radius: 0;
+
+    @include respond-to-max(580) {
+      background-position: 63% 0;
+      min-height: 200px;
+    }
+
+    @include respond-to-max(380) {
+      background-position: 75% 0;
+    }
+  }
+
+  .w-team {
+    margin: 26px auto 40px;
+  }
+
+  .w-join__team {
+    padding-bottom: 60px;
+
+    p {
+      &+p {
+        margin-top: 30px;
+      }
+    }
+  }
+}
